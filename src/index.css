@@ -1,0 +1,51 @@
+:root {
+  --background: #fff;
+  --text-primary: #000;
+  --button-bg: #000;
+  --button-text: #fff;
+}
+
+[data-theme="dark"] {
+  --background: #000;
+  --text-primary: #fff;
+  --button-bg: #fff;
+  --button-text: #000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background: var(--button-bg);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: var(--button-text);
+}
+button:hover {
+  border-color: #646cff;
+}
+
+.container {
+  background-color: var(--background);
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: 0.5s;
+}
